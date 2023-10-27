@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-27 10:25:33 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTEwLTI3OzEwOjIwOjQ0IMOWUzsyMzcz"/>
+        <attribute name="edited" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTEwLTI3OzEwOjI1OjMzIMOWUzsyOzI0ODU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="age, birth, thisyear" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter your birth year:&quot;" newline="True"/>
+            <input variable="birth"/>
+            <output expression="&quot;Please enter the year we're currently in:&quot;" newline="True"/>
+            <input variable="thisyear"/>
+            <if expression="thisyear&lt;birth">
+                <then>
+                    <output expression="&quot;You haven't been born yet!!!&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="age" expression="thisyear-birth"/>
+                    <output expression="&quot;Your age is &quot;&amp;age" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-27 10:45:39 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTEwLTI3OzEwOjM4OjEyIMOWUzsyMzc3"/>
+        <attribute name="edited" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTEwLTI3OzEwOjQ1OjM5IMOWUzsyOzI0OTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="t, v" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter the time:&quot;" newline="True"/>
+            <input variable="t"/>
+            <if expression="t&lt;15">
+                <then>
+                    <assign variable="v" expression="32*t"/>
+                    <output expression="&quot;Speed at given time is &quot;&amp;v" newline="True"/>
+                </then>
+                <else>
+                    <if expression="t&lt;35">
+                        <then>
+                            <assign variable="v" expression="480"/>
+                            <output expression="&quot;Speed at given time is &quot;&amp;v" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="t&lt;50">
+                                <then>
+                                    <assign variable="v" expression="480-32*(t-35)"/>
+                                    <output expression="&quot;Speed at given time is &quot;&amp;v" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Speed at given time is 0&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

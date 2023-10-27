@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-27 10:55:57 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTEwLTI3OzEwOjQ1OjQzIMOWUzsyMzc5"/>
+        <attribute name="edited" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTEwLTI3OzEwOjU1OjU3IMOWUzsyOzI0OTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, d, e, f, amount" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter the amount of money you have:&quot;" newline="True"/>
+            <input variable="amount"/>
+            <assign variable="a" expression="amount/200"/>
+            <assign variable="amount" expression="amount%200"/>
+            <assign variable="b" expression="amount/100"/>
+            <assign variable="amount" expression="amount%100"/>
+            <assign variable="c" expression="amount/50"/>
+            <assign variable="amount" expression="amount%50"/>
+            <assign variable="d" expression="amount/20"/>
+            <assign variable="amount" expression="amount%20"/>
+            <assign variable="e" expression="amount/10"/>
+            <assign variable="amount" expression="amount%10"/>
+            <assign variable="f" expression="amount/5"/>
+            <assign variable="amount" expression="amount%5"/>
+            <output expression="a&amp;&quot; 200 liras, &quot;&amp;b&amp;&quot; 100 liras, &quot;&amp;c&amp;&quot; 50 liras, &quot;&amp;d&amp;&quot; 20 liras, &quot;&amp;e&amp;&quot; 10 liras, &quot;&amp;f&amp;&quot; 5 liras&quot;" newline="True"/>
+            <if expression="amount!=0">
+                <then>
+                    <output expression="&quot;Also &quot;&amp;amount&amp;&quot; in coins&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

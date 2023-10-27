@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="LENOVO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-27 10:33:04 &#214;S"/>
+        <attribute name="created" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTEwLTI3OzEwOjI1OjM4IMOWUzsyMzgx"/>
+        <attribute name="edited" value="TEVOT1ZPO1RVUsKeVTsyMDIzLTEwLTI3OzEwOjMzOjA0IMOWUzs0OzI0ODQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C, D, x" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please enter all four edges one by one:&quot;" newline="True"/>
+            <input variable="A"/>
+            <input variable="B"/>
+            <input variable="C"/>
+            <input variable="D"/>
+            <if expression="A==B&amp;&amp;C==D&amp;&amp;A==C&amp;&amp;B==D">
+                <then>
+                    <output expression="&quot;Please enter the angle between any two of the adjacent edges:&quot;" newline="True"/>
+                    <input variable="x"/>
+                    <if expression="x==90">
+                        <then>
+                            <output expression="&quot;This is a square.&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;This is not a square.&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <output expression="&quot;This is not a square.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
